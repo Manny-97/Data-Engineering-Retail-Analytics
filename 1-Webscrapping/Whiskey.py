@@ -300,7 +300,6 @@ class whisky_web_scraping():
 
                     content_html = s.get_page_content(soup)
                     price_html = s.get_page_price(soup)
-                    print(price_html)
 
                     names = s.get_product_name(content_html)
                     alcohol_amount = s.get_product_alcohol_amount(content_html)
