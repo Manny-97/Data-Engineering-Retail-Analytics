@@ -4,16 +4,6 @@ This project will simulate the entire process that data-driven companies do to m
 
 __The project will include Web Scraping, processing and transforming data, loading and designing a Database and a Data Warehouse, and finally, analysis and descision making.__
 
-Check out my series of articles illustrating in details how I created the project.
-
-Part 1 - https://medium.com/towardsdev/data-engineering-project-retail-store-part-1-web-scraping-a99ac5d6d44c
-
-Part 2 - https://towardsdev.com/data-engineering-project-retail-store-part-2-loading-the-data-7c15c9c387e4
-
-Part 3 - https://towardsdev.com/data-engineering-project-retail-store-part-3-data-warehousing-519b74a0b6c4
-
-Part 4 - https://medium.com/codex/data-engineering-project-retail-store-part-4-analyzing-the-data-630efad6e09a
-
 ## Project Architecture
 ![document-3-1](https://user-images.githubusercontent.com/65648983/200861902-0188dd63-1a84-44e6-ba02-01bfea71add7.png)
 
