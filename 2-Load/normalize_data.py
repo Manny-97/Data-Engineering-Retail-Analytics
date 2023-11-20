@@ -1,5 +1,10 @@
 import pandas as pd
 import pandasql as ps
+from generate_store_data import (
+    customer_df,
+    employee_df,
+
+)
 
 
 def sql(query):

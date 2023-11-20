@@ -1,6 +1,17 @@
 # Connecting Python to MySQL
 import pymysql
 import pandas as pd
+from generate_store_data import (
+    customer_df,
+    employee_df,
+    payment_df,
+    product_df,
+)
+from normalize_data import (
+    countries_df,
+    customer_cc_df,
+    department_df
+)
 
 '''
 1. Connecting Python to MySQL
