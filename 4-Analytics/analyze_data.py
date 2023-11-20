@@ -1,4 +1,5 @@
 import pandas as pd
+import pandasql as ps
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -13,7 +14,7 @@ def mysql(query):
     return pd.read_sql_query(query, connection)
 
 def sql(query):
-    return pd.sqldf(query)
+    return ps.sqldf(query)
   
 '''
 Connecting to MySQL
