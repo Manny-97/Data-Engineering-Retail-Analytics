@@ -1,11 +1,11 @@
 # Data-Engineering-Retail-Analytics
-In this project, I created an __entire data architecture__ for a made-up whiskey retail shop that will enable shop managers to make decisions based on their data. 
+In this project, I created an __entire data architecture__ for a whiskey retail shop that will enable shop managers to make decisions based on their data. 
 This project will simulate the entire process that data-driven companies do to make data-based decisions.
 
 __The project will include Web Scraping, processing and transforming data, loading and designing a Database and a Data Warehouse, and finally, analysis and descision making.__
 
 ## Project Architecture
-![document-3-1](https://user-images.githubusercontent.com/65648983/200861902-0188dd63-1a84-44e6-ba02-01bfea71add7.png)
+![document-3-1](images/architecture.png)
 
 
 ## Part 1 - Web Scraping
@@ -30,7 +30,7 @@ data = scraper.scrape_whisky(number_of_pages=5)
 ```
 |    |Product_Name                                     |Alcohol_Percent  |Alcohol_Amount|Alcohol_Price|
 |----|-------------------------------------------------|-----------------|--------------|-------------|
-|0   | Deanston 18 Year Old                            |46.3             |70           |63.95        |
+|0   | Deanston 18 Year Old                            |46.3             |70            |63.95        |
 |1   |Lagavulin 2006 Distillers Edition                |43               |70            |89.95        |
 |2   |Benromach Cask Strength Vintage 2010             |58.5             |70            |51.95        |
 |3   |Personalised Highland Special Reserve Single Malt|48               |70            |54.95        |
@@ -57,7 +57,7 @@ In this part, I generated data about the whisky restail shop, designed a Central
 1. Generate Random Data
 
 ```
-python generate_store_data.py
+python3 2-Load/generate_store_data.py
 ```
 
 2. Design the Database
@@ -69,18 +69,18 @@ python generate_store_data.py
 
 - Run this to design and normalize the data
 ```
-python normalize_data.py
+python3 2-Load/normalize_data.py
 ```
 
 3. Load the Data to MySQL
 ```
-Python load_data.py
+python3 2-Load/load_data.py
 ```
 
 ### End Result - Part 2 - Finished Database Schema
 All the Data is now stored in MySQL.
 
-![1 YxBrGMeYHcC4Zbb8w0loYA](https://user-images.githubusercontent.com/65648983/200845784-93092dde-afdb-4f8e-a7ab-8f4c61c78531.png)
+![Database Schema](images/database.png)
 
 **********************************************************************************************************************************
 **********************************************************************************************************************************
@@ -94,7 +94,7 @@ In this part, I will design a Data Warehouse which will be the main analytic foc
 ### In Python - Generate the Date Dimension
 
 ```
-python generate_date_dimension.py
+python3 3-Data-Warehouse/generate_date_dimension.py
 ```
 
 ### In MySQL - Generate Dimensions & Triggers
@@ -109,7 +109,7 @@ triggers.sql
 ```
 ### End Result - Part 3 - Finished Data Warehouse Schema
 
-![1 6V1ZTROGwoa9IKy1DDrDtg](https://user-images.githubusercontent.com/65648983/200848563-b557b0a7-1889-4f87-811e-0c7a98cb0ed9.png)
+![Data Warehouse Schema](images/datawarehouse.png)
 
 **********************************************************************************************************************************
 **********************************************************************************************************************************
@@ -120,7 +120,7 @@ In this part, ill get into the shoes of the analysts in the company and analyze 
 
 ### Applying the code
 ```
-python analyze_data.py
+python3 4-Analytics/analyze_data.py
 ```
 
 ### End Result - Part 4 - Analysis
